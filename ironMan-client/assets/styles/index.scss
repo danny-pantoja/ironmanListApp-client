@@ -1,0 +1,14 @@
+@import '~bootstrap/scss/bootstrap';
+
+$black: #000;
+
+.border {
+  border: 3px solid $black;
+  margin: 20px;
+  padding: 20px;
+}
+
+#authenticated {
+  // visibility: hidden;
+  display: none;
+}
