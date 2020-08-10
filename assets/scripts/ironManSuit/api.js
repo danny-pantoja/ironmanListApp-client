@@ -42,12 +42,12 @@ const suitDelete = function (id) {
 
 const suitUpdate = function (formData) {
   return $.ajax({
-    url: config.apiUrl + '/ironManSuit/' + formData.suit.id,
+    url: config.apiUrl + '/ironManSuit/' + formData.ironManSuit.id,
     method: 'PATCH',
     data: {
-      suit: {
-        title: formData.suit.title,
-        director: formData.suit.director
+      ironManSuit: {
+        title: formData.ironManSuit.model,
+        director: formData.ironManSuit.description
       }
     },
     headers: {

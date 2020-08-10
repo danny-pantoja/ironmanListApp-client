@@ -1,14 +1,19 @@
-const createSuitSuccess = function (response) {
+'use strict'
+const indexSuitHandlebar = require('../templates/suit-listing.handlebars')
+
+const createSuitSuccess = (response) => {
+  console.log(response)
+
   $('#message').text('Suit created! Yay!')
 
-  const oneSuit = (`
-      <h3>${response.suit.title}</h3>
-      <h4>${response.suit.director}</h4>
-      <p>ID: ${response.suit._id}</p>
-      <p>Owner (User's ID): ${response.suit.owner}</p>
-    `)
+  // const oneSuit = (`
+  //     <h3>${response.suit.model}</h3>
+  //     <h4>${response.suit.description}</h4>
+  //     <p>ID: ${response.suit._id}</p>
+  //     <p>Owner (User's ID): ${response.suit.owner}</p>
+  //   `)
 
-  $('#content').html(oneSuit)
+  // $('#content').html(oneSuit)
 }
 
 const createSuitFailure = function (error) {
@@ -16,40 +21,41 @@ const createSuitFailure = function (error) {
   $('#message').text('Suit was not created :(')
 }
 
-const indexSuitSuccess = function (response) {
-  let suitHtml = ''
-  response.suits.forEach(suit => {
-    const oneSuit = (`
-        <h3>${suit.title}</h3>
-        <h4>${suit.director}</h4>
-        <p>ID: ${suit._id}</p>
-        <p>Owner (User's ID): ${suit.owner}</p>
-      `)
-
-    suitHtml += oneSuit
-  })
-
-  $('#content').html(suitHtml)
+const indexSuitSuccess = function (data) {
+  const indexSuitHtml = indexSuitHandlebar({ ironManSuit: data.ironManSuit })
+  $('#content').append(indexSuitHtml)
+  $('#message').text('Indexed suits ')
 }
+// let suitHtml = ''
+// response.suits.forEach(suit => {
+//   const oneSuit = (`
+//       <h3>${suit.model}</h3>
+//       <h4>${suit.description}</h4>
+//       <p>ID: ${suit._id}</p>
+//       <p>Owner (User's ID): ${suit.owner}</p>
+//     `)
+//
+//   suitHtml += oneSuit
+// })
 
 const indexSuitFailure = function () {
   $('#message').text('Index suits failed :(')
 }
 
-const showSuitSuccess = function (response) {
-  const oneSuit = (`
-      <h3>${response.suit.title}</h3>
-      <h4>${response.suit.director}</h4>
-      <p>ID: ${response.suit._id}</p>
-      <p>Owner (User's ID): ${response.suit.owner}</p>
-    `)
+// const showSuitSuccess = function (response) {
+//   // const oneSuit = (`
+//   //     <h3>${response.suit.model}</h3>
+//   //     <h4>${response.suit.description}</h4>
+//   //     <p>ID: ${response.suit._id}</p>
+//   //     <p>Owner (User's ID): ${response.suit.owner}</p>
+//   //   `)
+//
+//   // $('#content').html(oneSuit)
+// }
 
-  $('#content').html(oneSuit)
-}
-
-const showSuitFailure = function () {
-  $('#message').text('Show suit failed :(')
-}
+// const showSuitFailure = function () {
+//   $('#message').text('Show suit failed :(')
+// }
 
 const suitDeleteSuccess = function () {
   $('#message').text('Suit Deleted successfully!')
@@ -75,7 +81,7 @@ module.exports = {
   createSuitSuccess,
   createSuitFailure,
   indexSuitSuccess,
-  indexSuitFailure,
-  showSuitFailure,
-  showSuitSuccess
+  indexSuitFailure
+  // showSuitFailure,
+  // showSuitSuccess
 }

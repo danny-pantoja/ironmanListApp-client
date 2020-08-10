@@ -1,0 +1,18 @@
+{{#each ironManSuit as |ironManSuit|}}
+  {{log ironManSuit}}
+  <section data-id="{{ironManSuit.id}}">
+    <h6>Model:</h6>
+    <h3>
+      {{limit ironManSuit.model 15}}
+    </h3>
+    <h6>Description:</h6>
+    <p>
+      {{#if ironManSuit.model}}
+        {{ironManSuit.model}}
+      {{else}}
+        No model provided.
+      {{/if}}
+    </p>
+      </section>
+
+  {{/each}}
