@@ -1,25 +1,17 @@
-# Iron Man List App
+# Iron Man List App: Nerding out on Iron Man Suits
 
-# Application Title: A Description
-
-This application allows the user to do x, y, and z. Maybe here's a reason why I
-wanted to do this project, or came up with this idea.
+After signing up and signing in, this application allows the user to create an entry describing an Iron Man Suit. Just a place where one can add their favorite suit or make one up entirely and add a description of it. Once added if wanted the user can update it or remove the entry.
 
 ## Important Links
 
-- [Other Repo](www.link.com)
-- [Deployed API](www.link.com)
-- [Deployed Client](www.link.com)
+- [Iron Man List App Repo](https://github.com/danny-pantoja/ironmanListApp-client
+)
+- [Deployed API](https://git.heroku.com/stormy-coast-80026.git)
+- [Deployed Client](https://github.com/danny-pantoja/ironmanListApp-client/tree/master/ironMan-client)
 
-## Planning Story
+## Planning
 
-Lorem ipsum dolor amet cloud bread letterpress squid actually, single-origin
-coffee williamsburg af poutine fingerstache austin semiotics paleo man braid
-vexillologist. Tumeric literally banjo pickled disrupt cold-pressed thundercats
-shoreditch try-hard health goth intelligentsia pop-up small batch skateboard
-farm-to-table. Meh tofu fam, direct trade tattooed stumptown etsy everyday
-carry activated charcoal. Neutra cornhole polaroid literally salvia, listicle
-tofu.
+I wan to plan some stuff!
 
 ### User Stories
 
@@ -45,7 +37,7 @@ tofu.
 ## Images
 
 #### Wireframe:
-![wireframe](https://lucidchart.zendesk.com/hc/article_attachments/360001080866/Facebook_Wireframe_-_New_Page.png)
+![wireframe](https://mega.nz/file/eYtlWATZ#SQ5WEQ-WO1p4lmFEvuyAIEQGEXgcHtiS97mDi1sI-UU)
 
 ---
 
