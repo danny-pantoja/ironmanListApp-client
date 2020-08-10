@@ -14,7 +14,7 @@ $(() => {
   $('#sign-out').on('submit', authEvents.onSignOut)
 
   // IronMan entries listenert:
-  $('#suite-create').on('submit', suitEvents.onSuitCreate)
+  $('#suit-create').on('submit', suitEvents.onSuitCreate)
   $('#suit-index').on('click', suitEvents.onSuitIndex)
   $('#suit-show').on('submit', suitEvents.onSuitShow)
   $('#suit-delete').on('submit', suitEvents.onSuitDelete)

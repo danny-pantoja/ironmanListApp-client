@@ -14,7 +14,7 @@ const onSuitCreate = function (event) {
 }
 
 const onSuitIndex = function (event) {
-  api.suiteIndex()
+  api.suitIndex()
     .then(ui.indexSuitSuccess)
     .catch(ui.indexSuitFailure)
 }

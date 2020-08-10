@@ -7,7 +7,7 @@ const suitCreate = function (formData) {
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
-    url: config.apiUrl + '/suits',
+    url: config.apiUrl + '/ironManSuit',
     method: 'POST',
     data: formData
   })
@@ -15,13 +15,16 @@ const suitCreate = function (formData) {
 
 const suitIndex = function () {
   return $.ajax({
-    url: config.apiUrl + '/suits'
+    headers: {
+      Authorization: 'Bearer ' + store.user.token
+    },
+    url: config.apiUrl + '/ironManSuit'
   })
 }
 
 const suitShow = function (id) {
   return $.ajax({
-    url: config.apiUrl + '/suits/' + id
+    url: config.apiUrl + '/ironManSuit/' + id
   })
 }
 
@@ -29,7 +32,7 @@ const suitDelete = function (id) {
   return $.ajax({
     // Use the ID value from the form in the URL
     // to delete a specific suit
-    url: config.apiUrl + '/suits/' + id,
+    url: config.apiUrl + '/ironManSuit/' + id,
     method: 'DELETE',
     headers: {
       Authorization: 'Bearer ' + store.user.token
@@ -39,7 +42,7 @@ const suitDelete = function (id) {
 
 const suitUpdate = function (formData) {
   return $.ajax({
-    url: config.apiUrl + '/suits/' + formData.suit.id,
+    url: config.apiUrl + '/ironManSuit/' + formData.suit.id,
     method: 'PATCH',
     data: {
       suit: {

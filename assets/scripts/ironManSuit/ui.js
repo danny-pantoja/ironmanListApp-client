@@ -1,7 +1,7 @@
 const createSuitSuccess = function (response) {
   $('#message').text('Suit created! Yay!')
 
-    const oneSuit = (`
+  const oneSuit = (`
       <h3>${response.suit.title}</h3>
       <h4>${response.suit.director}</h4>
       <p>ID: ${response.suit._id}</p>
