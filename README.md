@@ -1,46 +1,48 @@
 # Iron Man List App: Nerding out on Iron Man Suits
 
-After signing up and signing in, this application allows the user to create an entry describing an Iron Man Suit. Just a place where one can add their favorite suit or make one up entirely and add a description of it. Once added if wanted the user can update it or remove the entry.
+Just a place where one can add their favorite suit (or make one up entirely!) and add a description of it. After signing up and signing in, this application allows the user to create an entry describing an Iron Man Suit. Once added if wanted the user can update it or remove the entry.
 
 ## Important Links
 
-- [Iron Man List App Repo](https://github.com/danny-pantoja/ironmanListApp-client
-)
-- [Deployed API](https://git.heroku.com/stormy-coast-80026.git)
-- [Deployed Client](https://github.com/danny-pantoja/ironmanListApp-client/tree/master/ironMan-client)
+- [Iron Man List App Client Repo](https://github.com/danny-pantoja/ironmanListApp-client)
+- [Iron Man List Deployed Client](https://danny-pantoja.github.io/ironmanListApp-client/)
+- [Iron Man List API Repo](https://github.com/danny-pantoja/ironmanListApp-api)
+- [Iron Man List Deployed API](https://git.heroku.com/stormy-coast-80026.git)
 
 ## Planning
 
-I wan to plan some stuff!
+Work started with User Stories and logical planning. The wireframes and the ERD were drawn up. Started working on the backend to ensure the request were built and tested with CURL. After good tests, the front end was started to build the simple webpage.
 
 ### User Stories
 
-- As a user I want to sign in/up
-- As a user I want to Create a new < resource >
-- As a user I want to Read multiple < resources >
-- As a user I want to Read a single < resource >
-- As a user I want to Update a < resource > I own
-- As a user I want to Delete a < resource > I own
+- As a user I want to sign in/up to join the Iron Man nerdom
+- As a user I want to Create a new Iron Man Suit entry
+- As a user I want to Read multiple Iron Man Suit entries
+- As a user I want to Update an Iron Suit that I own
+- As a user I want to Delete an Iron Suit that I own
 
 ### Technologies Used
 
 - jQuery
 - HTML/CSS
-- Bootstrap
+- Handlebars
 - Javascript
 
 ### Unsolved Problems
 
-- Still need to ....
-- Would like to eventually ....
+- Still need to display the Key of the Iron Man Suit created
+- Would like to eventually add pictures, links, add comments, and better styling
+
 
 ## Images
 
 #### Wireframe:
-![wireframe](https://mega.nz/file/eYtlWATZ#SQ5WEQ-WO1p4lmFEvuyAIEQGEXgcHtiS97mDi1sI-UU)
+![wireframe_1](https://i.imgur.com/XaoNnSJ.png)
+![wireframe_2](https://i.imgur.com/3SyyKqa.png)
+![wireframe_3](https://i.imgur.com/lnA4ecY.png)
+![wireframe_4](https://i.imgur.com/he34mao.png)
 
 ---
 
 #### ERD:
-![ERD](https://www.smartdraw.com/entity-relationship-diagram/img/cardinality.jpg?bn=1510011144)
-#  ironMan-client
+![ERD](https://i.imgur.com/NT5RmEf.png)
