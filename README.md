@@ -38,10 +38,13 @@ Work started with User Stories and logical planning. The wireframes and the ERD 
 
 #### Wireframe:
 ![wireframe_1](https://i.imgur.com/XaoNnSJ.png)
+[wireframe_1](https://i.imgur.com/XaoNnSJ.png)
 ![wireframe_2](https://i.imgur.com/3SyyKqa.png)
+[wireframe_2](https://i.imgur.com/3SyyKqa.png)
 ![wireframe_3](https://i.imgur.com/lnA4ecY.png)
+[wireframe_3](https://i.imgur.com/lnA4ecY.png)
 ![wireframe_4](https://i.imgur.com/he34mao.png)
-
+[wireframe_4](https://i.imgur.com/he34mao.png)
 ---
 
 #### ERD:
