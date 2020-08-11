@@ -49,3 +49,4 @@ Work started with User Stories and logical planning. The wireframes and the ERD 
 
 #### ERD:
 ![ERD](https://i.imgur.com/NT5RmEf.png)
+[ERD](https://i.imgur.com/NT5RmEf.png)
