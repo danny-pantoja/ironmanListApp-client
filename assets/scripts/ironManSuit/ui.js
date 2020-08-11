@@ -2,8 +2,8 @@
 const indexSuitHandlebar = require('../templates/suit-listing.handlebars')
 
 const createSuitSuccess = (response) => {
-  console.log(response)
-
+  // console.log(response)
+  $('form').trigger('reset')
   $('#message').text('Suit created! Yay!')
 
   // const oneSuit = (`
@@ -24,7 +24,7 @@ const createSuitFailure = function (error) {
 const indexSuitSuccess = function (data) {
   const indexSuitHtml = indexSuitHandlebar({ ironManSuit: data.ironManSuit })
   $('#content').append(indexSuitHtml)
-  $('#message').text('Indexed suits ')
+  $('#message').text('Indexed suits')
 }
 // let suitHtml = ''
 // response.suits.forEach(suit => {
@@ -58,6 +58,7 @@ const indexSuitFailure = function () {
 // }
 
 const suitDeleteSuccess = function () {
+  $('form').trigger('reset')
   $('#message').text('Suit Deleted successfully!')
 }
 

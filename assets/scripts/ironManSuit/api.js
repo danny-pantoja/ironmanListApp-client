@@ -22,11 +22,11 @@ const suitIndex = function () {
   })
 }
 
-const suitShow = function (id) {
-  return $.ajax({
-    url: config.apiUrl + '/ironManSuit/' + id
-  })
-}
+// const suitShow = function (id) {
+//   return $.ajax({
+//     url: config.apiUrl + '/ironManSuit/' + id
+//   })
+// }
 
 const suitDelete = function (id) {
   return $.ajax({
@@ -46,8 +46,8 @@ const suitUpdate = function (formData) {
     method: 'PATCH',
     data: {
       ironManSuit: {
-        title: formData.ironManSuit.model,
-        director: formData.ironManSuit.description
+        model: formData.ironManSuit.model,
+        description: formData.ironManSuit.description
       }
     },
     headers: {
@@ -60,6 +60,6 @@ module.exports = {
   suitUpdate,
   suitDelete,
   suitCreate,
-  suitIndex,
-  suitShow
+  suitIndex
+  // suitShow
 }
