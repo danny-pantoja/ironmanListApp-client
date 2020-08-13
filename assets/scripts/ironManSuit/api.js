@@ -22,12 +22,6 @@ const suitIndex = function () {
   })
 }
 
-// const suitShow = function (id) {
-//   return $.ajax({
-//     url: config.apiUrl + '/ironManSuit/' + id
-//   })
-// }
-
 const suitDelete = function (id) {
   return $.ajax({
     // Use the ID value from the form in the URL
@@ -61,5 +55,4 @@ module.exports = {
   suitDelete,
   suitCreate,
   suitIndex
-  // suitShow
 }

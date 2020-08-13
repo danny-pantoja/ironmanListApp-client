@@ -12,7 +12,15 @@
         No model provided.
       {{/if}}
     </p>
-      {{> partial}}
+    <h6>Key:</h6>
+    <h3>
+      {{#if ironManSuit._id}}
+          {{ironManSuit._id}}
+        {{else}}
+          No id provided.
+        {{/if}}
+    </h3>
+      {{!-- {{> partial}} --}}
       </section>
 
   {{/each}}

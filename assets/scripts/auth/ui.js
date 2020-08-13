@@ -22,10 +22,12 @@ const signInFailure = function () {
 }
 
 const changePasswordSuccess = function () {
+  $('form').trigger('reset')
   $('#message').text('change password success!')
 }
 
 const changePasswordFailure = function () {
+  $('form').trigger('reset')
   $('#message').text('change password failed :(')
 }
 

@@ -15,7 +15,7 @@ const createSuitFailure = function (error) {
 
 const indexSuitSuccess = function (data) {
   const indexSuitHtml = indexSuitHandlebar({ ironManSuit: data.ironManSuit })
-  $('#content').append(indexSuitHtml)
+  $('#content').html(indexSuitHtml)
   $('#message').text('Indexed suits')
 }
 
