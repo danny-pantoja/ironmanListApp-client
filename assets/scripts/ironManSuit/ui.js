@@ -10,6 +10,7 @@ const createSuitSuccess = (response) => {
 
 const createSuitFailure = function (error) {
   console.log(error)
+  $('form').trigger('reset')
   $('#message').text('Suit was not created :(')
 }
 
@@ -29,6 +30,7 @@ const suitDeleteSuccess = function () {
 }
 
 const suitDeleteFailure = function () {
+  $('form').trigger('reset')
   $('#message').text('Suit Delete Failed :(')
 }
 
