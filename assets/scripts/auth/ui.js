@@ -3,12 +3,14 @@
 const store = require('../store')
 
 const signUpSuccess = function () {
+  $('form').trigger('reset')
   $('#message').text('Successfully signed up!')
 }
 const signUpFailure = function () {
   $('#message').text('Sign Up failed :(')
 }
 const signInSuccess = function (response) {
+  $('form').trigger('reset')
   $('#message').text('Sign in Success!')
   console.log(store)
   // IMPORTANT - necessary to use the token later
