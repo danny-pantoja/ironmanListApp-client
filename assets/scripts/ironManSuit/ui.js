@@ -33,10 +33,12 @@ const suitDeleteFailure = function () {
 }
 
 const suitUpdateSuccess = function () {
+  $('form').trigger('reset')
   $('#message').text('Suit Update Success!')
 }
 
 const suitUpdateFailure = function () {
+  $('form').trigger('reset')
   $('#message').text('Suit Update failed :(')
 }
 

@@ -7,6 +7,7 @@ const signUpSuccess = function () {
   $('#message').text('Successfully signed up!')
 }
 const signUpFailure = function () {
+  $('form').trigger('reset')
   $('#message').text('Sign Up failed :(')
 }
 const signInSuccess = function (response) {
@@ -18,6 +19,7 @@ const signInSuccess = function (response) {
 }
 
 const signInFailure = function () {
+  $('form').trigger('reset')
   $('#message').text('Sign in Failed :(')
 }
 
