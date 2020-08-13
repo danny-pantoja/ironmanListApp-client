@@ -8,9 +8,9 @@ const signUp = function (formData) {
     url: config.apiUrl + '/sign-up',
     method: 'POST',
     data: formData
-    // data: { credentials: { email: '', password: '', password_confirmation: '' } }
   })
 }
+
 const signIn = function (formData) {
   return $.ajax({
     url: config.apiUrl + '/sign-in',
@@ -18,12 +18,10 @@ const signIn = function (formData) {
     data: formData
   })
 }
+
 const changePassword = function (formData) {
-  console.log(store.user)
   return $.ajax({
     headers: {
-      // Access the token on the `store.user` object
-      // This only works if we sign in first
       Authorization: 'Bearer ' + store.user.token
     },
     url: config.apiUrl + '/change-password',

@@ -12,13 +12,7 @@ const signUpFailure = function () {
 const signInSuccess = function (response) {
   $('form').trigger('reset')
   $('#message').text('Sign in Success!')
-  console.log(store)
-  // IMPORTANT - necessary to use the token later
-  // response.user includes a key 'token'
   store.user = response.user
-  console.log('store: ', store)
-  console.log('token: ', store.user.token)
-  //  I want to show the authenticated options and hide the unauthtenticated options:
   $('#authenticated').show()
   $('#unauthenticated').hide()
 }

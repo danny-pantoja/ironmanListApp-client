@@ -1,21 +1,11 @@
 'use strict'
-const api = require('./api')
-const getFormFields = require('../../../lib/get-form-fields')
+// const api = require('./api')
+// const getFormFields = require('../../../lib/get-form-fields')
 const indexSuitHandlebar = require('../templates/suit-listing.handlebars')
 
 const createSuitSuccess = (response) => {
-  // console.log(response)
   $('form').trigger('reset')
   $('#message').text('Suit created! Yay!')
-
-  // const oneSuit = (`
-  //     <h3>${response.suit.model}</h3>
-  //     <h4>${response.suit.description}</h4>
-  //     <p>ID: ${response.suit._id}</p>
-  //     <p>Owner (User's ID): ${response.suit.owner}</p>
-  //   `)
-
-  // $('#content').html(oneSuit)
 }
 
 const createSuitFailure = function (error) {
@@ -28,36 +18,10 @@ const indexSuitSuccess = function (data) {
   $('#content').append(indexSuitHtml)
   $('#message').text('Indexed suits')
 }
-// let suitHtml = ''
-// response.suits.forEach(suit => {
-//   const oneSuit = (`
-//       <h3>${suit.model}</h3>
-//       <h4>${suit.description}</h4>
-//       <p>ID: ${suit._id}</p>
-//       <p>Owner (User's ID): ${suit.owner}</p>
-//     `)
-//
-//   suitHtml += oneSuit
-// })
 
 const indexSuitFailure = function () {
   $('#message').text('Index suits failed :(')
 }
-
-// const showSuitSuccess = function (response) {
-//   // const oneSuit = (`
-//   //     <h3>${response.suit.model}</h3>
-//   //     <h4>${response.suit.description}</h4>
-//   //     <p>ID: ${response.suit._id}</p>
-//   //     <p>Owner (User's ID): ${response.suit.owner}</p>
-//   //   `)
-//
-//   // $('#content').html(oneSuit)
-// }
-
-// const showSuitFailure = function () {
-//   $('#message').text('Show suit failed :(')
-// }
 
 const suitDeleteSuccess = function () {
   $('form').trigger('reset')
@@ -85,6 +49,4 @@ module.exports = {
   createSuitFailure,
   indexSuitSuccess,
   indexSuitFailure
-  // showSuitFailure,
-  // showSuitSuccess
 }
