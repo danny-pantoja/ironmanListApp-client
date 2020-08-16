@@ -19,24 +19,10 @@ const onSuitIndex = function (event) {
     .catch(ui.indexSuitFailure)
 }
 
-// const onSuitShow = function (event) {
-//   event.preventDefault()
-//
-//   const form = event.target
-//   const formData = getFormFields(form)
-//   api.suitShow(formData.suite.id)
-//     .then(ui.showSuiteSuccess)
-//     .catch(ui.showSuiteFailure)
-// }
-
 const onSuitDelete = function (event) {
   event.preventDefault()
-  // Storing the form in a variable
   const form = event.target
-  // Passing the form to getFormFields
   const formData = getFormFields(form)
-  // formData: { movie: { id: '' } }
-
   api.suitDelete(formData.ironManSuit.id)
     .then(ui.suitDeleteSuccess)
     .catch(ui.suitDeleteFailure)
@@ -44,10 +30,8 @@ const onSuitDelete = function (event) {
 
 const onSuitUpdate = function (event) {
   event.preventDefault()
-
   const form = event.target
   const formData = getFormFields(form)
-  // formData: { movie: { id: '', title: '', director: '' } }
   api.suitUpdate(formData)
     .then(ui.suitUpdateSuccess)
     .catch(ui.suitUpdateFailure)
@@ -56,7 +40,6 @@ const onSuitUpdate = function (event) {
 module.exports = {
   onSuitUpdate,
   onSuitCreate,
-  // onSuitShow,
   onSuitIndex,
   onSuitDelete
 }
