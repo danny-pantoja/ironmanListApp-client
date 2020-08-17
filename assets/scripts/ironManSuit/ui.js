@@ -34,11 +34,11 @@ const suitDeleteFailure = function () {
   $('#message').text('Suit Delete Failed :(')
 }
 
-const suitUpdateSuccess = function (data) {
-  const indexSuitHtml = indexSuitHandlebar({ ironManSuit: data.ironManSuit })
+const suitUpdateSuccess = function () {
   $('form').trigger('reset')
+  $('#content').hide()
+  $('#content').show()
   $('#message').text('Suit Update Success!')
-  $('#content').html(indexSuitHtml)
 }
 
 const suitUpdateFailure = function () {
