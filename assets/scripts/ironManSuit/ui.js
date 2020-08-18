@@ -1,10 +1,10 @@
 'use strict'
-// const api = require('./api')
-// const getFormFields = require('../../../lib/get-form-fields')
+
 const indexSuitHandlebar = require('../templates/suit-listing.handlebars')
 
 const createSuitSuccess = (response) => {
   $('form').trigger('reset')
+  $('#suit-content').hide()
   $('#message').text('Suit created! Yay!')
 }
 
@@ -16,7 +16,8 @@ const createSuitFailure = function (error) {
 
 const indexSuitSuccess = function (data) {
   const indexSuitHtml = indexSuitHandlebar({ ironManSuit: data.ironManSuit })
-  $('#content').html(indexSuitHtml)
+  $('#suit-content').html(indexSuitHtml)
+  $('#suit-content').show()
   $('#message').text('Indexed suits')
 }
 
@@ -26,7 +27,8 @@ const indexSuitFailure = function () {
 
 const suitDeleteSuccess = function () {
   $('form').trigger('reset')
-  $('#message').text('Suit Deleted successfully!')
+  $('#suit-content').hide()
+  $('#message').text('Suit Deleted successfully! Please Click Get All Suits Button to Refresh The List')
 }
 
 const suitDeleteFailure = function () {
@@ -36,11 +38,16 @@ const suitDeleteFailure = function () {
 
 const suitUpdateSuccess = function () {
   $('form').trigger('reset')
-  $('#content').hide()
-  $('#content').show()
-  $('#message').text('Suit Update Success!')
+  // $('#suit-content').on('suitUpdate', function () {
+  // const indexSuitHtml = indexSuitHandlebar({ ironManSuit: data.ironManSuit })
+  // $('#suit-content').html(indexSuitHtml)
+  // $('#suit-content').trigger('click')
+  // $('#suit-content').trigger('reset')
+  $('#suit-content').hide()
+  // $('#suit-content').show()
+  $('#message').text('Suit Update Success! Please Click Get All Suits Button to Refresh The List')
+  // })
 }
-
 const suitUpdateFailure = function () {
   $('form').trigger('reset')
   $('#message').text('Suit Update failed :(')

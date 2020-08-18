@@ -1,0 +1,26 @@
+{{#each ironManAlly as |ironManAlly|}}
+    <section data-id="{{ironManAlly._id}}">
+    <h6>Ally:</h6>
+    <h3>
+      {{limit ironManAlly.ally 15}}
+    </h3>
+    <h6>Description:</h6>
+    <p>
+      {{#if ironManAlly.description}}
+        {{ironManAlly.description}}
+      {{else}}
+        No ally provided.
+      {{/if}}
+    </p>
+    <h6>Key:</h6>
+    <h3>
+      {{#if ironManAlly._id}}
+          {{ironManAlly._id}}
+        {{else}}
+          No id provided.
+        {{/if}}
+    </h3>
+      {{!-- {{> partial}} --}}
+      </section>
+
+  {{/each}}

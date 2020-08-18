@@ -47,7 +47,9 @@
           <button type="submit">Create a Suit!</button>
         </form>
 
-        <button id="suit-index">Get All Suits</button>
+        <form id ="suit-index">
+        <button>Get All Suits</button>
+       </form>
 
         <form id="suit-delete">
           <input placeholder="Suit ID" type="text" name="ironManSuit[id]">
@@ -57,11 +59,34 @@
         <form id="suit-update">
           <input placeholder="Suit Model" type="text" name="ironManSuit[model]">
           <input placeholder="Suit Description" type="text"  name="ironManSuit[description]">
-          <input placeholder="Suit ID" type="text" name="ironManSuit[id]">
+          <input placeholder="Ally's ID" type="text" name="ironManSuit[id]">
           <button type="submit">Update Suit</button>
+        </form>
+
+        <form id="ally-create">
+          <input type="text" name="ironManAlly[ally]" placeholder="Ally">
+          <input type="text" name="ironManAlly[description]" placeholder="Ally description">
+          <button type="submit">Create an Ally!</button>
+        </form>
+
+        <form id ="ally-index">
+        <button>Get All Allies</button>
+       </form>
+
+        <form id="ally-delete">
+          <input placeholder="Ally ID" type="text" name="ironManAlly[id]">
+          <button type="submit">Delete an Ally</button>
+        </form>
+
+        <form id="ally-update">
+          <input placeholder="Ally" type="text" name="ironManAlly[ally]">
+          <input placeholder="Ally Description" type="text"  name="ironManAlly[description]">
+          <input placeholder="Ally ID" type="text" name="ironManAlly[id]">
+          <button type="submit">Update Ally</button>
         </form>
       </div>
 
-      <div id="content"></div>
+      <div id="suit-content"></div>
+      <div id="ally-content"></div>
     </body>
 </html>

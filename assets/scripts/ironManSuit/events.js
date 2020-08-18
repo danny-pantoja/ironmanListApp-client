@@ -4,16 +4,15 @@ const ui = require('./ui')
 
 const onSuitCreate = function (event) {
   event.preventDefault()
-
   const form = event.target
   const formData = getFormFields(form)
-
   api.suitCreate(formData)
     .then(ui.createSuitSuccess)
     .catch(ui.createSuitFailure)
 }
 
 const onSuitIndex = function (event) {
+  event.preventDefault()
   api.suitIndex()
     .then(ui.indexSuitSuccess)
     .catch(ui.indexSuitFailure)
