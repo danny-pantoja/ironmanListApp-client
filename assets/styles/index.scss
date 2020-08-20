@@ -8,7 +8,17 @@ $black: #000;
   padding: 20px;
 }
 
+#unauthenticated {
+  flex-shrink: 1;
+
+}
+
+#iron-heading {
+  color: #ff0000;
+  text-align: center;
+}
+
+
 #authenticated {
-  // visibility: hidden;
   display: none;
 }
