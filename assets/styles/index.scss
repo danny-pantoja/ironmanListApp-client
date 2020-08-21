@@ -10,7 +10,6 @@ $black: #000;
 
 #unauthenticated {
   flex-shrink: 1;
-
 }
 
 #iron-heading {
@@ -18,7 +17,28 @@ $black: #000;
   text-align: center;
 }
 
-
 #authenticated {
   display: none;
 }
+
+#ironManHelmet, #sign-up, #sign-in {
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+//  {
+//
+//   padding: 0;
+//   margin: 0;
+//   list-style: none;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// align-items: center;
+// justify-content: center;
