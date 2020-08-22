@@ -43,7 +43,9 @@
         <form id="sign-out">
           <button type="submit">Sign Out</button>
         </form>
+      </div>
 
+       <section id="ironManSuitSection">
         <form id="suit-create">
           <input type="text" name="ironManSuit[model]" placeholder="suit model">
           <input type="text" name="ironManSuit[description]" placeholder="suit description">
@@ -65,14 +67,15 @@
           <input placeholder="Ally's ID" type="text" name="ironManSuit[id]">
           <button type="submit">Update Suit</button>
         </form>
-
+      </section>
+      <section id="ironManAllySection">
         <form id="ally-create">
           <input type="text" name="ironManAlly[ally]" placeholder="Ally">
           <input type="text" name="ironManAlly[description]" placeholder="Ally description">
           <button type="submit">Create an Ally!</button>
         </form>
 
-        <form id ="ally-index">
+        <form id="ally-index">
         <button>Get All Allies</button>
        </form>
 
@@ -87,7 +90,7 @@
           <input placeholder="Ally ID" type="text" name="ironManAlly[id]">
           <button type="submit">Update Ally</button>
         </form>
-      </div>
+      </section>
 
       <div id="suit-content"></div>
       <div id="ally-content"></div>
