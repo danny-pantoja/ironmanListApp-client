@@ -1,13 +1,5 @@
 @import '~bootstrap/scss/bootstrap';
 
-$black: #000;
-
-.border {
-  border: 3px solid $black;
-  margin: 20px;
-  padding: 20px;
-}
-
 #unauthenticated {
   flex-shrink: 1;
 }
@@ -29,11 +21,21 @@ $black: #000;
   margin: 0;
   padding: 0;
 }
-#change-password {
+
+#change-password, #sign-out {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
 }
+
+
+// #ironManAllySection {
+//   display: flex;
+//   }
+//
+// #ironManAllySection {
+//   display: flex;
+//   }
 //  {
 //
 //   padding: 0;
