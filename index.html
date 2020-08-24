@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Iron Man Suits</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <h1 id="iron-heading">Iron Man Suits</h1>
+      <p id="message"></p>
+
+      <section id="unauthenticated">
+       <div id="ironManHelmet">
+         <img src="https://i.imgur.com/Wu6bLap.jpg" class="center" alt="Iron Man Helmet" width="300" height="400">
+       </div>
+        <form id="sign-up">
+          <input name="credentials[email]" placeholder="email here" type="text">
+          <input name="credentials[password]" placeholder="password here" type="password">
+          <input name="credentials[password_confirmation]" placeholder="confirm password here" type="password">
+          <button type="submit">Sign Up!</button>
+        </form>
+
+        <form id="sign-in">
+          <input name="credentials[email]" placeholder="email here" type="email">
+          <input name="credentials[password]" placeholder="password here" type="password">
+          <button type="submit">Sign In</button>
+        </form>
+
+      </section>
+
+      <section id="authenticated">
+        <form id="change-password">
+          <input name="passwords[old]" placeholder="old password" type="password">
+          <input name="passwords[new]" placeholder="new password" type="password">
+          <button type="submit">Change Password</button>
+        </form>
+
+        <form id="sign-out">
+          <button id="signOut" type="submit">Sign Out</button>
+        </form>
+
+
+       <div id="ironManSuitSection">
+        <form id="suit-create">
+          <input type="text" name="ironManSuit[model]" placeholder="suit model">
+          <input type="text" name="ironManSuit[description]" placeholder="suit description">
+          <button type="submit">Create a Suit!</button>
+        </form>
+
+        <form id ="suit-index">
+        <button>Get All Suits</button>
+       </form>
+
+        <form id="suit-delete">
+          <input placeholder="Suit ID" type="text" name="ironManSuit[id]">
+          <button type="submit">Delete A suit</button>
+        </form>
+
+        <form id="suit-update">
+          <input placeholder="Suit Model" type="text" name="ironManSuit[model]">
+          <input placeholder="Suit Description" type="text"  name="ironManSuit[description]">
+          <input placeholder="Suit's ID" type="text" name="ironManSuit[id]">
+          <button type="submit">Update Suit</button>
+        </form>
+      </div>
+        <div id="ironManAllySection">
+        <form id="ally-create">
+          <input type="text" name="ironManAlly[ally]" placeholder="Ally">
+          <input type="text" name="ironManAlly[description]" placeholder="Ally description">
+          <button type="submit">Create an Ally!</button>
+        </form>
+
+        <form id="ally-index">
+        <button>Get All Allies</button>
+       </form>
+
+        <form id="ally-delete">
+          <input placeholder="Ally ID" type="text" name="ironManAlly[id]">
+          <button type="submit">Delete an Ally</button>
+        </form>
+
+        <form id="ally-update">
+          <input placeholder="Ally" type="text" name="ironManAlly[ally]">
+          <input placeholder="Ally Description" type="text"  name="ironManAlly[description]">
+          <input placeholder="Ally ID" type="text" name="ironManAlly[id]">
+          <button type="submit">Update Ally</button>
+        </form>
+      </div>
+     </section>
+     <section>
+      <div id="suit-content"></div>
+      <div id="ally-content"></div>
+    </section>
+    </body>
+</html>
