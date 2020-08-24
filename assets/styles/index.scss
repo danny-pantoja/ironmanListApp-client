@@ -18,8 +18,8 @@
   display: flex;
   justify-content: center;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 5px;
+  padding: 5px;
 }
 
 #change-password, #sign-out {
@@ -28,14 +28,34 @@
   justify-content: flex-end;
 }
 
+#ironManSuitSection {
+  background-color: #ff0000;
+  padding: 15px 0px;
+  }
 
-// #ironManAllySection {
-//   display: flex;
-//   }
-//
-// #ironManAllySection {
-//   display: flex;
-//   }
+  #ironManAllySection {
+    background-color: #478af5;
+    padding: 15px 0px;
+    }
+
+#suit-content {
+  align-items: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  margin: 10px 30px;
+  padding: 10px 30px;
+}
+#ally-content {
+  align-items: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  margin: 10px 30px;
+  padding: 10px 30px;
+}
 //  {
 //
 //   padding: 0;

@@ -4,8 +4,8 @@ Just a place where one can add their favorite suit (or make one up entirely!) an
 
 ## Important Links
 
-- [Iron Man List App Client Repo](https://github.com/danny-pantoja/ironmanListApp-client)
 - [Iron Man List Deployed Client](https://danny-pantoja.github.io/ironmanListApp-client/)
+- [Iron Man List App Client Repo](https://github.com/danny-pantoja/ironmanListApp-client)
 - [Iron Man List API Repo](https://github.com/danny-pantoja/ironmanListApp-api)
 - [Iron Man List Deployed API](https://git.heroku.com/stormy-coast-80026.git)
 

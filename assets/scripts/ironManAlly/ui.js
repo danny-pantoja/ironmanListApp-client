@@ -11,14 +11,14 @@ const createAllySuccess = (response) => {
 const createAllyFailure = function (error) {
   console.log(error)
   $('form').trigger('reset')
-  $('#message').text('Ally was not created :(')
+  $('#message').text('Ally was not created, Please try again')
 }
 
 const indexAllySuccess = function (data) {
   const indexAllyHtml = indexAllyHandlebar({ ironManAlly: data.ironManAlly })
   $('#ally-content').html(indexAllyHtml)
   $('#ally-content').show()
-  $('#message').text("These are some of Iron Man's allies")
+  $('#message').text("These are some of Iron Man's allies. Please Check Below")
 }
 
 const indexAllyFailure = function () {
@@ -38,15 +38,8 @@ const allyDeleteFailure = function () {
 
 const allyUpdateSuccess = function () {
   $('form').trigger('reset')
-  // $('#ally-content').on('allyUpdate', function () {
-  // const indexAllyHtml = indexAllyHandlebar({ ironManAlly: data.ironManAlly })
-  // $('#ally-content').html(indexAllyHtml)
-  // $('#ally-content').trigger('click')
-  // $('#ally-content').trigger('reset')
   $('#ally-content').hide()
-  // $('#ally-content').show()
   $('#message').text('Ally Update Success! Please Click Get All Allies Button to Refresh The List')
-  // })
 }
 const allyUpdateFailure = function () {
   $('form').trigger('reset')

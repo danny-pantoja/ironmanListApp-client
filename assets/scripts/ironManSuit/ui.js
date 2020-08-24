@@ -11,14 +11,14 @@ const createSuitSuccess = (response) => {
 const createSuitFailure = function (error) {
   console.log(error)
   $('form').trigger('reset')
-  $('#message').text('Suit was not created :(')
+  $('#message').text('Suit was not created, Please try again')
 }
 
 const indexSuitSuccess = function (data) {
   const indexSuitHtml = indexSuitHandlebar({ ironManSuit: data.ironManSuit })
   $('#suit-content').html(indexSuitHtml)
   $('#suit-content').show()
-  $('#message').text('Indexed suits')
+  $('#message').text('Indexed suits. Please check below')
 }
 
 const indexSuitFailure = function () {
@@ -38,15 +38,8 @@ const suitDeleteFailure = function () {
 
 const suitUpdateSuccess = function () {
   $('form').trigger('reset')
-  // $('#suit-content').on('suitUpdate', function () {
-  // const indexSuitHtml = indexSuitHandlebar({ ironManSuit: data.ironManSuit })
-  // $('#suit-content').html(indexSuitHtml)
-  // $('#suit-content').trigger('click')
-  // $('#suit-content').trigger('reset')
   $('#suit-content').hide()
-  // $('#suit-content').show()
   $('#message').text('Suit Update Success! Please Click Get All Suits Button to Refresh The List')
-  // })
 }
 const suitUpdateFailure = function () {
   $('form').trigger('reset')
